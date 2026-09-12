@@ -1,6 +1,8 @@
 #Made by Decayer177
 
+import os
 import discord
+
 from discord.ext import commands
 from discord.ext.commands import bot
 import asyncio
@@ -159,5 +161,5 @@ async def info(ctx, member: discord.Member=None):
     print("Action completed: User Info")
 #############################
 
-client.run("TOKEN")
+client.run(os.environ["DISCORD_TOKEN"])
 # Place your Bot's token here
